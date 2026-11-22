@@ -1,6 +1,6 @@
 cask "threefingerminimize" do
-  version "1.0.0"
-  sha256 "4a155afc6982b1ecd7be87bd1fdd243688d1a877aec8a018d357f66934dcf665"
+  version "1.0.1"
+  sha256 "e1524cf0fb4426704480573601104868834a6a69def0dbd80ebb61d68bd316e4"
 
   url "https://github.com/vivogf/ThreeFingerMinimize/releases/download/v#{version}/ThreeFingerMinimize.zip"
   name "ThreeFingerMinimize"
