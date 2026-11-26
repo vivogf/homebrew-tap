@@ -1,6 +1,6 @@
 cask "softclick" do
-  version "1.0.0"
-  sha256 "2d89b7c6c1185cf7575c0e12c6bb8007d8f2c7c05e651ff5c50c7a17a622e968"
+  version "1.0.1"
+  sha256 "cafbef2f7874c65b99b24599967705ca4cc01f1a05f8027cdc3ba0a2ace22e99"
 
   url "https://github.com/vivogf/SoftClick/releases/download/v#{version}/SoftClick.zip"
   name "Soft Click"
