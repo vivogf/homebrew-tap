@@ -12,14 +12,16 @@ cask "softclick" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "SoftClick.app"
 
   # The app is ad-hoc signed, not notarized.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/SoftClick.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/SoftClick.app"],
+        writable_paths: ["SoftClick.app"],
+        writable_base:  :appdir
   end
 
   # Quitting normally lets the app restore the stock trackpad click.
