@@ -3,6 +3,8 @@
 Homebrew casks by vivogf.
 
 ```sh
+brew tap vivogf/tap
+brew trust vivogf/tap   # Homebrew asks you to trust third-party taps
 brew install --cask vivogf/tap/threefingerminimize
 brew install --cask vivogf/tap/softclick
 ```
